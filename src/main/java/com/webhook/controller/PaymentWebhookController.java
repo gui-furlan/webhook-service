@@ -36,7 +36,7 @@ public class PaymentWebhookController {
             .orElse(ResponseEntity.notFound().build());
     }
 
-    @PatchMapping("/payment/received/{id}")
+    @PostMapping("/payment/received/{id}")
     public ResponseEntity<PaymentResponse> updatePaymentStatus(@PathVariable Long id) {
         PaymentResponse response = paymentService.updatePaymentStatus(id);
         
