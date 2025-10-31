@@ -28,7 +28,7 @@ services:
         condition: service_healthy
     environment:
       SPRING_PROFILES_ACTIVE: docker
-      SERVER_PORT: "8087"
+      SERVER_PORT: "8088"
 
       SPRING_DATASOURCE_URL: "jdbc:postgresql://db:5432/webhook"
       SPRING_DATASOURCE_USERNAME: "postgres"
